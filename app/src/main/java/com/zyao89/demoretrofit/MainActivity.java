@@ -39,19 +39,19 @@ public class MainActivity extends AppCompatActivity
         mRetrofitService = retrofit.create(RetrofitService.class);
     }
 
-//    public void login(View view)
-//    {
-////        User user = new User("admin", "123456");
-////        Call<ResponseBody> login = mRetrofitService.login(user);
-//        Call<ResponseBody> login = mRetrofitService.login("bacdd", "333444");
-//        login.enqueue(getCallback());
-//    }
-
     public void login(View view)
     {
-        Call<ResponseBody> login = mRetrofitService.login("login", "admin", "123444");
+//        User user = new User("admin", "123456");
+//        Call<ResponseBody> login = mRetrofitService.login(user);
+        Call<ResponseBody> login = mRetrofitService.login("bacdd", "333444");
         login.enqueue(getCallback());
     }
+
+//    public void login(View view)
+//    {
+//        Call<ResponseBody> login = mRetrofitService.login("login", "admin", "123444");
+//        login.enqueue(getCallback());
+//    }
 
     public void updateUser(View view)
     {
